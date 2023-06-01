@@ -1,0 +1,77 @@
+@font-face {
+	font-family:Montserrat;
+    src:url(../fonts/montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+html, body, main {
+	font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	position: relative;
+    width: 100%;
+    margin: 0;
+    font-size: 1.05rem;
+	font-weight: 300;
+	color: $black;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 3rem auto -1px 12rem;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        ". . . ."
+        "footer footer footer footer";
+    align-content: space-between;
+    background-color: $brand-gray-200;
+    background-color: #F5F5F5;
+}
+
+main {
+    grid-area: main;
+    min-height: 75vh;
+
+    .main-header {
+        height: 2rem;
+        margin: 0;
+        font-size: 1.5rem;
+        padding: 0.25rem;
+        text-align: center;
+    }
+}
+
+a,
+.link {
+    color: #267875;
+    font-weight: 300;
+    cursor: pointer;
+	transition: all 0.3s;
+    &:hover,
+    &:focus {
+        color: $brand-secondary;
+    }
+}
+
+.print-only {
+	display: none;
+}
+
+@media print {
+	.print-only {
+		display: inherit;
+	}
+}

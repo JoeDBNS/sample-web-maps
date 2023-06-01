@@ -1,0 +1,66 @@
+.list-module {
+    ol {
+        li {
+            margin: 10px auto;
+            font-size: .875rem;
+        }
+    }
+    ul {
+        li {
+            margin: 5px auto;
+            font-size: .875rem;
+        }
+    }
+    .policy-list {
+        list-style-type: none;
+        padding: 0;
+
+        .policy {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            overflow: hidden;
+
+            .issue-date {
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+            .categories {
+                list-style-type: revert;
+                padding-left: 42px;
+                padding-right: 0;
+                padding-bottom: 10px;
+
+                .category {
+                    //
+                }
+            }
+            .file-main {
+                font-size: 1.2rem;
+                font-family: 'OpenSans-Bold';
+                cursor: pointer;
+            }
+            .file-sub {
+                font-size: .9rem;
+                color: #23726f;
+            }
+        }
+        .policy-expired {
+            background-color: #f1dbdb;
+            border-radius: 4px;
+            padding: 0 8px;
+
+            .file-main {
+                color: #1d6865;
+
+                .file-main-expired {
+                    color: #a90000;
+                }
+            }
+            .file-sub {
+                .title {
+                    color: #236c6a;
+                }
+            }
+        }
+    }
+}

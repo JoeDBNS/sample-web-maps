@@ -1,0 +1,67 @@
+.form-module {
+    form {
+        margin: 40px auto 50px auto;
+	    font-family: sans-serif, monospace;
+
+        .form-header {
+            margin-top: 30px;
+            margin-bottom: 24px;
+            text-align: center;
+            font-size: 1.75rem;
+            color: #3f6f8a;
+        }
+
+        .form-header-subtext {
+            margin: 16px 0;
+            font-size: .85rem;
+        }
+
+        .form-header-subtext-notice {
+            font-size: .85rem;
+            color: #d40000;
+        }
+
+        .form-section {
+            margin-top: 80px;
+
+            .section-header {
+                display: flex;
+                margin-bottom: 18px;
+                font-size: 1.3rem;
+
+                .header-text {
+                    padding-right: 2rem;
+                    z-index: 1;
+                    font-size: 1.4rem;
+                    color: #3f6f8a;
+                }
+
+                .header-divider {
+                    height: 2px;
+                    background-color: rgba(1,50,69,0.4);
+                    top: 60%;
+                    z-index: 2;
+                }
+            }
+            &:first-of-type {
+                margin-top: 60px;
+            }
+        }
+
+        .form-action {
+            margin-top: 80px;
+        }
+
+        .form-page {
+            //
+        }
+
+        .form-page-active {
+            //
+        }
+
+        .form-page-inactive {
+            display: none;
+        }
+    }
+}

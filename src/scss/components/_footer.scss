@@ -1,0 +1,79 @@
+#app-footer {
+    grid-area: footer;
+
+	.footer-brand {
+		display: inline-block;
+		margin: 1rem 0;
+        border-radius: $radius-element;
+        transition: linear 0.075s all;
+        &:hover, &:focus {
+            transform: scale(1.025);
+        }
+
+		img {
+			width: 5rem;
+			height: auto;
+			border-radius: $radius-element;
+			overflow: hidden;
+            user-select: none;
+		}
+    }
+    .footer-nav {
+        .nav-link {
+            color: $white;
+        }
+    }
+
+	.footer-bottom {
+        background-color: $brand;
+
+		.bottom-link {
+            padding: 0.5rem 0;
+            font-size: .8rem;
+            text-align: center;
+
+            a {
+                color: white;
+            }
+        }
+
+        .bottom-copyright {
+            padding: 0.25rem 1rem;
+            font-size: .75rem;
+            text-align: center;
+        }
+	}
+}
+
+footer.som-footer {
+    background-color: #252525;
+    font-family: 'Montserrat';
+    color: white;
+
+    .footer-nav {
+        display: inline-block;
+        padding: 22px 0;
+
+        .nav-text {
+            padding-top: 8px;
+            font-size: .875rem;
+        }
+        .nav-link {
+            display: contents;
+            padding-left: 0;
+            padding-right: 0;
+            color: #fff;
+            font-size: .875rem;
+            font-weight: 500;
+            font-variation-settings: "wght" 500;
+            line-height: 1.25rem;
+            &:before {
+                content: "|";
+                margin-left: 10px;
+                margin-right: 10px;
+                font-weight: 500;
+                font-variation-settings: "wght" 400;
+            }
+        }
+    }
+}
